@@ -7,8 +7,8 @@ export default function App() {
   const [result, setResult] = React.useState<String | undefined>();
 
   React.useEffect(() => {
-    console.log(Cloudinary.setCloud)
-    setResult(JSON.stringify(Cloudinary.setCloud, null, 2))
+    console.log(Cloudinary.setCloud);
+    setResult(JSON.stringify(Cloudinary.setCloud, null, 2));
   }, []);
 
   return (
