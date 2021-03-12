@@ -9,8 +9,8 @@ class RNCloudinary: RCTEventEmitter {
         return ["onStart", "onProgress", "onDone", "onError"]
     }
 
-    @objc
-    func setCloud(_ cloudName: String, _ apiKey: String) -> Void {
+    @objc(setCloud:apiKey:)
+    func setCloud(_ cloudName: String, apiKey: String) -> Void {
         let config = CLDConfiguration(cloudName: cloudName, apiKey: apiKey)
         self.cloud = CLDCloudinary(configuration: config)
     }

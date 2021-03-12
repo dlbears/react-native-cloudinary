@@ -3,7 +3,7 @@
 
 @interface RCT_EXTERN_MODULE(RNCloudinary, RCTEventEmitter)
 
-RCT_EXTERN_METHOD(setCloud:(String)cloudName withApi:(String)apiKey)
-RCT_EXTERN_METHOD(uploadFile:(String)fileUri)
+RCT_EXTERN_METHOD(setCloud:(NSString *)cloudName apiKey:(NSString *)apiKey)
+RCT_EXTERN_METHOD(uploadFile:(NSString *)fileUri)
 
 @end
