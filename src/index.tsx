@@ -1,9 +1,10 @@
 import { NativeModules } from 'react-native';
 
-type CloudinaryType = {
-  multiply(a: number, b: number): Promise<number>;
+type RNCloudinaryType = {
+  setCloud(cloudName: String, apiKey: String): void;
+  uploadFile(fileUri: String): void;
 };
 
-const { Cloudinary } = NativeModules;
+const { RNCloudinary } = NativeModules;
 
-export default Cloudinary as CloudinaryType;
+export default RNCloudinary as RNCloudinaryType;

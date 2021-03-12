@@ -1,5 +1,5 @@
 {
-  "name": "react-native-cloudinary",
+  "name": "react-native-cloudinary-upload",
   "version": "0.1.0",
   "description": "cloudinary sdks for react native",
   "main": "lib/commonjs/index",

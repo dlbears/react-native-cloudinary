@@ -4,10 +4,11 @@ import { StyleSheet, View, Text } from 'react-native';
 import Cloudinary from 'react-native-cloudinary';
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
+  const [result, setResult] = React.useState<String | undefined>();
 
   React.useEffect(() => {
-    Cloudinary.multiply(3, 7).then(setResult);
+    console.log(Cloudinary.setCloud)
+    setResult(JSON.stringify(Cloudinary.setCloud, null, 2))
   }, []);
 
   return (

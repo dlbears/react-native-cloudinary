@@ -1,9 +1,9 @@
 #import <React/RCTBridgeModule.h>
+#import <React/RCTEventEmitter.h>
 
-@interface RCT_EXTERN_MODULE(Cloudinary, NSObject)
+@interface RCT_EXTERN_MODULE(RNCloudinary, RCTEventEmitter)
 
-RCT_EXTERN_METHOD(multiply:(float)a withB:(float)b
-                 withResolver:(RCTPromiseResolveBlock)resolve
-                 withRejecter:(RCTPromiseRejectBlock)reject)
+RCT_EXTERN_METHOD(setCloud:(String)cloudName withApi:(String)apiKey)
+RCT_EXTERN_METHOD(uploadFile:(String)fileUri)
 
 @end
